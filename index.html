@@ -2,14 +2,18 @@
 <html lang="en" >
 <head>
     <meta charset="utf-8" />
-    <title>UploadPhoto</title>
+    <title>Upload Media</title>
     <link rel="apple-touch-icon" href="appicon.png" />
     <link rel="apple-touch-startup-image" href="startup.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+    
+    <script src="js/jquery.min.js"></script>
+
     <script src="js/script.js"></script>
+
 </head>
 <body>
    
@@ -27,12 +31,16 @@
                                 <input type="file" accept="video/*;capture=camcorder">
                                 <input type="file" accept="audio/*;capture=microphone">
                         -->
-                        <input type="file" accept="video/*" name="image_file" id="image_file" onchange="fileSelected();" />
+                        <input type="file" accept="audio/*" name="image_file" id="media_file" onchange="fileSelected();" />
                     </div>
                 </div>
                 
                 <div>
                     <input class="button green bigrounded" type="button" value="Upload" onclick="startUploading()" />
+                </div>
+
+                <div>
+                    <h2 id="device_info"></h2>
                 </div>
                 
                 <div id="fileinfo">
