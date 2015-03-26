@@ -23,15 +23,16 @@
             <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php">
                 <div>
                     <div>
-                        <label for="image_file">Begin recording into the video, then press Upload</label>
+                        <label for="media_file">Begin recording into the video, then press Upload</label>
                     </div>
 
                     <div>
                         <!--
                                 <input type="file" accept="video/*;capture=camcorder">
                                 <input type="file" accept="audio/*;capture=microphone">
+                                onchange="fileSelected();"
                         -->
-                        <input type="file" accept="audio/*" name="image_file" id="media_file" onchange="fileSelected();" />
+                        <input type="file" accept="audio/*" name="media_file" id="media_file"  />
                     </div>
                 </div>
                 
